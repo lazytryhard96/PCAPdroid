@@ -1,4 +1,4 @@
-name: Android Pull Request & Master CI
+name: Run unit tests after master push or pull request
 
 on:
   pull_request:
