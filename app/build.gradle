@@ -49,6 +49,14 @@ android {
         unitTests.includeAndroidResources = true
     }
 
+    tasks.withType(Test) {
+        testLogging {
+            exceptionFormat "full"
+            events "started", "skipped", "passed", "failed"
+            showStandardStreams true
+        }
+    }
+
 }
 
 dependencies {
